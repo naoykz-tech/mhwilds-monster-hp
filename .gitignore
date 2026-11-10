@@ -1,0 +1,12 @@
+# 配布用ZIP
+*.zip
+dist/
+
+# OS / エディタ
+.DS_Store
+Thumbs.db
+.vscode/
+
+# REFrameworkが生成するファイル
+*.log
+monster_hp_config.json
