@@ -9,7 +9,7 @@ REFramework の Object Explorer などで見つけたクラス・メソッドを
 | --- | --- |
 | Monster Hunter Wilds | |
 | REFramework | |
-| 調査日 | |
+| 11/21 | |
 
 ## 記録テンプレート
 
@@ -26,6 +26,6 @@ REFramework の Object Explorer などで見つけたクラス・メソッドを
 
 ## 調査済み一覧
 
-| 欲しい情報 | クラス名 | フィールド / メソッド | 確認済み | 確認したバージョン |
+| 自分のス名   | app.PlayerManager | フィールド / getMasterPlayer() | まだ | 確認したバージョン |
 | --- | --- | --- | --- | --- |
 | | | | | |
