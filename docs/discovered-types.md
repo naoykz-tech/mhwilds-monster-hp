@@ -28,4 +28,4 @@ REFramework の Object Explorer などで見つけたクラス・メソッドを
 
 | 欲しい情報 | クラス名 | フィールド / メソッド | 確認済み | 確認したバージョン |
 | --- | --- | --- | --- | --- |
-| | | | | |
+| 自分のプレイヤー | app.PlayerManager | getMasterPlayer() | OK | |
