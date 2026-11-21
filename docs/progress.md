@@ -7,6 +7,26 @@
 
 ---
 
+## 2026-11-21　自分のプレイヤーを取得できた 🎉
+
+**できたこと**
+- REFramework の Object Explorer で app.PlayerManager を開き、TDB Methods から getMasterPlayer() を自分で見つけた
+- Lua で app.PlayerManager を呼び出し、getMasterPlayer() で自分のプレイヤーを取得できた
+- 画面に緑の文字で「Player OK」を表示できた
+
+**わかったこと**
+- 毎フレーム動かしたいコードは、re.on_frame(function() と end) の間に書く必要がある
+- end) の外に書くと、スクリプト読み込み時に1回しか動かない（Reset Scripts の瞬間だけ表示される）
+- 取れなかったときに別の文字（PM NG / Player NG）を出すと、どこで止まっているか調べやすい
+- draw.text は日本語を表示できない（四角になる）ので、表示する文字は英語にする
+
+**次にやること**
+1. プレイヤーの座標を取得して画面に出す
+2. 見つけたクラス名・メソッド名を docs/discovered-types.md に記録する
+3. 設定画面と設定保存の動作確認
+
+---
+
 ## 2026-11-10　Hello World 表示に成功 🎉
 
 **できたこと**
