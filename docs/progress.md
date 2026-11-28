@@ -7,6 +7,29 @@
 
 ---
 
+## 2026-11-28　座標の表示と、モンスターの数え上げができた 🎉
+
+**できたこと**
+- Object Explorer の TDB Fields をたどり、PlayerManager → PlayerList → cPlayerManageControl → PlayerInfo → GameObject → Transform → Position という道のりを自分で見つけた
+- Lua で getMasterPlayer() → `<Object>k__BackingField` → get_Transform → get_Position とたどり、自分のプレイヤーの座標（X・Y・Z）を画面に表示できた
+- string.format で小数点以下を1桁にそろえて、座標を見やすくした
+- app.EnemyManager の `_EnemyList` → `_RawArray` を取り出し、for 文で700個の枠を数えて「Enemy: 186」のようにモンスターの数を表示できた
+
+**わかったこと**
+- メソッドの行を開いても説明書き（Virtual Index や Flags）しか出ない。本物の中身はフィールド（TDB Fields）からたどる
+- `<Object>k__BackingField` のような名前は C# が自動で付けた名前で、`<` `>` も名前の一部。0x10 などは場所の番号なので名前には入れない
+- RE Engine では Y が高さ。立っているだけでも小数点以下は細かく動く
+- Object Explorer では、座標のような「値型」の数字は表示されない
+- モンスターのリストは700個の枠があり、中身が入っているのはとびとびの番号。どの番号に入っているかは ValidIndexManager が管理している
+- 数えた数（186前後）は、小型モンスターも含んだ数
+
+**次にやること**
+1. 数えたモンスターの中から、大型モンスターだけを見分ける
+2. Enemy まわりで見つけた名前を docs/discovered-types.md に記録する
+3. 設定画面と設定保存の動作確認
+
+---
+
 ## 2026-11-21　自分のプレイヤーを取得できた 🎉
 
 **できたこと**
